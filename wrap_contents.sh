@@ -3,3 +3,5 @@ footerFileName=$2_footer.html
 cat $headerFileName > $3
 cat $1 >> $3
 cat $footerFileName >> $3
+mv $3 temp.txt
+mv temp.txt $3
